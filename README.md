@@ -157,3 +157,5 @@ bus-charging-scheduler/
 ```
 <img width="1470" height="956" alt="Screenshot 2026-06-02 at 2 55 52 PM" src="https://github.com/user-attachments/assets/69161323-c8ce-44dc-b319-5be2d35f661d" />
 
+## Deployed Scheduler Image
+<img width="1470" height="956" alt="Screenshot 2026-06-02 at 3 07 36 PM" src="https://github.com/user-attachments/assets/14895563-4d1e-44b9-a47f-ece39e70c369" />
