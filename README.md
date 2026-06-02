@@ -11,6 +11,70 @@ streamlit run app.py
 
 The app opens at `http://localhost:8501`. Pick any scenario from the dropdown.
 
+## Running the Project
+
+### Create a Virtual Environment
+
+**macOS / Linux**
+
+```bash
+python -m venv venv
+source venv/bin/activate
+```
+
+**Windows**
+
+```bash
+python -m venv venv
+venv\Scripts\activate
+```
+
+### Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### Run the Application
+
+```bash
+streamlit run app.py
+```
+
+The application will be available at:
+
+`http://localhost:8501`
+
+## Running Tests
+
+Run all tests:
+
+```bash
+pytest
+```
+
+Run tests with verbose output:
+
+```bash
+pytest -v
+```
+
+Run a specific test file:
+
+```bash
+pytest tests/test_validator.py
+```
+
+```bash
+pytest tests/test_rules.py
+```
+
+Validate Python syntax:
+
+```bash
+python -m py_compile scheduler/engine.py
+```
+
 ## How to Change a Weight
 
 Open the relevant scenario JSON file (e.g. `scenarios/scenario_1.json`) and edit the `weights` block:
@@ -22,7 +86,6 @@ Open the relevant scenario JSON file (e.g. `scenarios/scenario_1.json`) and edit
   "overall":    0.5
 }
 ```
-
 
 You can also override weights at runtime using the sidebar sliders in the app.
 
@@ -58,14 +121,18 @@ Copy any existing scenario JSON, give it a new `scenario_id` and filename (`scen
 
 ## Project Structure
 
-```
+```text
 bus-charging-scheduler/
 ├── app.py                  # Streamlit UI
 ├── scheduler/
 │   ├── engine.py           # Greedy simulation + cost scoring
 │   ├── rules.py            # Pluggable cost rules
 │   ├── models.py           # Domain dataclasses
-│   └── loader.py           # JSON scenario loader
+│   ├── loader.py           # JSON scenario loader
+│   └── validator.py        # Schedule validation
+├── tests/
+│   ├── test_validator.py
+│   └── test_rules.py
 ├── scenarios/
 │   ├── scenario_1.json     # Even spacing
 │   ├── scenario_2.json     # Bunched start
@@ -76,4 +143,3 @@ bus-charging-scheduler/
 ├── README.md
 └── requirements.txt
 ```
-
