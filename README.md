@@ -155,3 +155,5 @@ bus-charging-scheduler/
 ├── README.md
 └── requirements.txt
 ```
+<img width="1470" height="956" alt="Screenshot 2026-06-02 at 2 55 52 PM" src="https://github.com/user-attachments/assets/69161323-c8ce-44dc-b319-5be2d35f661d" />
+
