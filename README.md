@@ -131,6 +131,8 @@ Done. The engine picks it up automatically.
 
 Copy any existing scenario JSON, give it a new `scenario_id` and filename (`scenario_6.json`), edit the buses and weights. Drop it in `scenarios/`. The app picks it up on next load.
 
+## Deployed url: https://python-app-ui-89tevzfxtsebpc5vyjkueg.streamlit.app
+
 ## Project Structure
 
 ```text
