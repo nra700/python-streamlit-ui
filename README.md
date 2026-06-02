@@ -69,12 +69,6 @@ pytest tests/test_validator.py
 pytest tests/test_rules.py
 ```
 
-Validate Python syntax:
-
-```bash
-python -m py_compile scheduler/engine.py
-```
-
 ## How to Change a Weight
 
 Open the relevant scenario JSON file (e.g. `scenarios/scenario_1.json`) and edit the `weights` block:
