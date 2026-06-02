@@ -45,6 +45,24 @@ The application will be available at:
 
 `http://localhost:8501`
 
+## Explore Scenarios
+
+The application includes five predefined scenarios:
+
+- **Scenario 1** – Even spacing
+- **Scenario 2** – Bunched departures
+- **Scenario 3** – Asymmetric load
+- **Scenario 4** – Operator fairness emphasis
+- **Scenario 5** – Worst-case charger contention
+
+For each scenario, the UI displays:
+
+- Bus schedules
+- Charging plans
+- Station queues
+- Wait times
+- Schedule summary metrics
+
 ## Running Tests
 
 Run all tests:
